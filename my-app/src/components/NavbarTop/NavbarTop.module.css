@@ -1,0 +1,62 @@
+.brand img{
+  margin-right: 15px;
+  width: 150px;
+}
+
+.brand img.logoMini , .brand img.logoMini-small-screen{
+  width: 25px;
+}
+
+.barsIcon{
+  /* margin-left: 20px; */
+  cursor: pointer;
+  display: inline-block;
+}
+.navbar{
+  padding: 20px ;
+  height: 78px;
+  /* background-color: #000000e0; */
+  /* position: fixed; */
+  width: 100%;
+  inset: 0;
+  z-index: 200;
+}
+.navbar svg{
+  color: #9c9fa6;
+  font-size: 20px;
+}
+.search-input{
+  position: relative;
+  margin-left: 30px;
+  display: inline-block;
+}
+.search-input > img{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.search-input > input{
+  border: none;
+  outline: none;
+  margin-left: 60px;
+  background-color: transparent;
+}
+.icon{
+  width: 20px;
+  margin: 0 15px;
+}
+@media screen and (max-width:767.5px){
+  .search-input{
+    display: none;
+  }
+}
+@media screen and (min-width:576.5px){
+  .logoMini-small-screen{
+    display: none;
+  }
+}
+@media screen and (max-width:575.5px){
+  .logo-big-screen{
+    display: none;
+  }
+}

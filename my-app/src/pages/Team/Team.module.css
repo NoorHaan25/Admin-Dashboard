@@ -1,0 +1,61 @@
+.wrapper-table {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+table{
+  width: 80%;
+  /* color: #ffffff; */
+}
+table > thead{
+  background-color: var(--main-color);
+  border-radius: 5px;
+}
+table > thead tr th{
+  font-size: 17px;
+  font-weight: 500;
+  white-space: nowrap;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 12px 20px;
+  /* color: #ffffff; */
+  border-right: 1px solid var(--border);
+}
+table > thead tr th:first-child{
+  /* border-radius: 5px 0 0 5px; */
+  width: 20px;
+}
+table > thead tr th:last-child{
+  border-radius: 0 5px 5px 0;
+}
+table tbody tr td{
+  text-align: center;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  font-weight: bold;
+}
+table tbody tr td:last-child span{
+  background-color: rgb(81, 8, 87);
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: #fff;
+}
+/* button{
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  margin: 0 5px;
+  color: #fff;
+} */
+.deleteButton{
+  background-color: #f00;
+  padding: 10px 20px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+.updateButton{
+  background-color: #da8cff;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+}

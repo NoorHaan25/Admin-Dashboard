@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+button{
+  border: none;
+  outline: none;
+}
+ul{
+  padding-left: 0;
+  padding-right: 0;
+}
+.dark{
+  background-color: black;
+  color: #fff;
+}
+.darkText{
+  color: #fff;
+}
+.lightText{
+  color: #000;
+}
+.light{
+  background-color: white;
+  color: #000;
+}
+.darkTextColor{
+  color: #fff;
+}
+.lightTextColor{
+  color: #000;
+}
+.darkBorderBottom{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.216);
+}
+.lightBorderBottom{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.216);
+}
+.darkBorderTop{
+  border-top: 1px solid rgba(255, 255, 255, 0.216);
+}
+.lightBorderTop{
+  border-top: 1px solid rgba(0, 0, 0, 0.216);
+}
+.darkContent{
+  background-color: #171717;
+}
+.darkBorder{
+  border:1px solid #2c2e33;
+  /* border: 1px solid rgba(255, 255, 255, 0.216); */
+}
+.lightBorder{
+  border: 1px solid rgba(0, 0, 0, 0.216);
+}
