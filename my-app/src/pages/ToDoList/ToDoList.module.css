@@ -6,12 +6,15 @@
   padding: 15px;
   border: none;
 }
-input{
+.todo-container input{
+  outline: none;
   padding: 5px 10px;
-    width: 75%;
-    border-radius: 5px;
+  width: 74%;
+  border-radius: 5px;
+  background-color: transparent;
+  margin-right: 7px;
 }
-button{
+.button-task{
   width: 25%;
   padding: 5px 10px;
   border-radius: 5px;
@@ -50,6 +53,7 @@ button{
 .task {
   padding: 10px;
   cursor: move; 
+  margin-bottom: 10px;
 }
 .dark-theme:hover {
   background-color: #444; 
@@ -63,7 +67,7 @@ button{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   transform: scale(1.02); 
 }
-.tasks-done > li{
+.tasks-done{
   text-decoration: line-through;
 }
 .task.is-dragging {

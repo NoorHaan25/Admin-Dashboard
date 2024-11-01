@@ -21,7 +21,7 @@ function Sidebar({openBars , setOpenbars ,  openBarsSmall, setOpenbarsSmall}) {
     },
     {
       text: 'Daily Habits',
-      pathName: 'team',
+      pathName: 'TaskManagement',
       icon: require(`../../image/icons/Habits-${darkTheme ? 'dark' : 'light'}.png`)
     },
     {
@@ -67,11 +67,6 @@ function Sidebar({openBars , setOpenbars ,  openBarsSmall, setOpenbarsSmall}) {
       text: 'Line Chart',
       pathName: 'line',
       icon: require(`../../image/icons/time-${darkTheme ? 'dark' : 'light'}.png`)
-    },
-    {
-      text: 'Geography Chart',
-      pathName: 'geography',
-      icon: require(`../../image/icons/map-${darkTheme ? 'dark' : 'light'}.png`)
     }
   ]
   return (

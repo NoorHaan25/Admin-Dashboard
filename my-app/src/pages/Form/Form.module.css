@@ -9,13 +9,11 @@
   justify-content: center;
   align-items: center;
 }
-input{
+ input{
   outline: none;
   border: none;
-  /* border-top: 1px solid #ffffff; */
   padding: 7px 10px;
   background-color: transparent;
-  /* border-radius: 5px; */
   width: 100%;
   color: #ffffff;
 }

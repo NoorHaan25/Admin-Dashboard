@@ -1,0 +1,101 @@
+::-webkit-scrollbar{
+  display: none;
+}
+.StickyNotes {
+  position: relative;
+  height: 100vh;
+  z-index: 1;
+}
+
+.StickyNotes::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../image/task.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.1; 
+  z-index: -1;
+}
+.heading {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* .heading h1 {
+  font-family: 'Pacifico', cursive; 
+  font-size: 3rem;
+  color: #800080;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+  background: linear-gradient(90deg, #a020f0, #800080, #9932cc); 
+  -webkit-background-clip: text;
+  color: transparent; 
+  letter-spacing: 2px; 
+  text-transform: uppercase; 
+} */
+.list-of-color{
+  margin-top: 50px;
+}
+.list-of-color > span{
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.list-of-color > span:first-child{
+  background-color: #ffc872;
+}
+.list-of-color > span:nth-child(2){
+  background-color: #ff9b72;
+}
+.list-of-color > span:nth-child(3){
+  background-color: #b693fd;
+}
+.list-of-color > span:nth-child(4){
+  background-color: #00d4fe;
+}
+.list-of-color > span:last-child{
+  background-color: #e6ef91;
+}
+
+ .box-note{
+  position: relative;
+  padding: 5px;
+  height: 300px;
+  background-color: #00d4fe;
+  border-radius: 10px;
+  margin: 12px 0;
+}
+.input-note{
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  max-width: calc(100% - 40px); 
+  overflow-wrap: break-word;
+  font-size: 24px;
+  word-break: break-word;
+  max-width: 100%;
+  overflow: scroll;
+  outline: none;
+}
+.box-note img.delete{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  top:10px;
+  right: 10px;
+}
+
+.date-note{
+  position: absolute;
+  bottom: 10px;
+  color: #000;
+  width: 100%;
+  text-align: center;
+}

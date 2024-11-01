@@ -5,37 +5,35 @@ import { addHabit, updateHabit } from "../../services/api";
 import { useLocation, useNavigate } from "react-router-dom"
 function Form() {
   const navigate = useNavigate()
-  const { darkTheme, habitName, setHabitName, targetFrequency, setTargetFrequency, lastCompleted, setLastCompleted, progress, setProgress} = useContext(ThemeContext);
+  const { darkTheme} = useContext(ThemeContext);
+  const [habitName, setHabitName] = useState("");
+  const [targetDays, setTargetDays] = useState("");
   const location = useLocation();
   useEffect(() => {
     if (location.state && location.state.isEditing) {
         const habit = location.state.habit;
         setHabitName(habit.HabitName);
-        setTargetFrequency(habit.TargetFrequency);
-        setLastCompleted(habit.LastCompleted);
-        setProgress(habit.Progress);
+        setTargetDays(habit.TargetDays);
     }
 }, []);
   const onSubmitHandler = (e) => {
     const habitData ={
       HabitName:habitName,
-      TargetFrequency:targetFrequency,
-      LastCompleted:lastCompleted,
-      Progress:progress,
+      TargetDays:targetDays,
     }
     e.preventDefault();
     // console.log(habitName, targetFrequency, lastCompleted, Progress);
     if (location.state && location.state.isEditing){
       updateHabit(location.state.habit.id, habitData).then((res)=>{
         if(res.status === 200 || res.status === 201){
-          navigate("/Team")
+          navigate("/TaskManagement")
         }
       })
     }else{
       addHabit(habitData).then((res) => {
         // console.log(res);
         if(res.status === 200 || res.status === 201){
-          navigate("/Team")
+          navigate("/TaskManagement")
         }
       });
     }
@@ -72,20 +70,20 @@ function Form() {
             htmlFor="frequency"
             className={`${darkTheme ? "darkText" : "lightText"}`}
           >
-            Target Frequency
+          Target Days
           </label>
           <input
             id="frequency"
             type="text"
             className={`${darkTheme ? "darkBorderTop darkTextColor" : "lightBorderTop lightTextColor"}`}
-            value={targetFrequency}
+            value={targetDays}
             onChange={(e) => {
-              setTargetFrequency(e.target.value);
+              setTargetDays(e.target.value);
             }}
             required
           />
         </div>
-        <div className={styles["wrapper-input"]}>
+        {/*<div className={styles["wrapper-input"]}>
           <label
             htmlFor="habitName"
             className={`${darkTheme ? "darkText" : "lightText"}`}
@@ -102,8 +100,8 @@ function Form() {
             }}
             required
           />
-        </div>
-        <div className={styles["wrapper-input"]}>
+        </div>*/}
+       {/* <div className={styles["wrapper-input"]}>
           <label
             htmlFor="progress"
             className={`${darkTheme ? "darkText" : "lightText"}`}
@@ -120,7 +118,7 @@ function Form() {
             }}
             required
           />
-        </div>
+        </div>*/}
         <div className={styles["wrapper-submit"]}>
           <input type="submit" value={location.state && location.state.isEditing ? "Update Habit" : "Add Habit"} />
         </div>

@@ -2,11 +2,9 @@
   margin-right: 15px;
   width: 150px;
 }
-
 .brand img.logoMini , .brand img.logoMini-small-screen{
   width: 25px;
 }
-
 .barsIcon{
   /* margin-left: 20px; */
   cursor: pointer;
@@ -24,6 +22,19 @@
 .navbar svg{
   color: #9c9fa6;
   font-size: 20px;
+}
+.notification{
+  position: relative;
+}
+.notification::after{
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  top: 0px;
+  right: 7px;
 }
 .search-input{
   position: relative;

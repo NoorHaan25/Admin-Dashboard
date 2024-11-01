@@ -1,0 +1,15 @@
+
+.heading{
+  text-align: center;
+}
+.accordion-item {
+  margin-bottom: 20px;
+  border: none;
+}
+.accordion-item  button{
+  border: none;
+  background-color: #b38add;
+}
+.accordion-item  button:not(.collapsed) {
+  background-color: #b38add;
+}

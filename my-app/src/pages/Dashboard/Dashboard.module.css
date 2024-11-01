@@ -1,0 +1,139 @@
+.dashboard{
+  margin-top: 20px;
+}
+.heading{
+  display: flex;
+  align-items: center;
+}
+.heading img{
+  width: 25px;
+}
+.heading h1{
+  font-size: 20px;
+  margin: 0 10px;
+}
+.card{
+  position: relative;
+  background-image: url(https://themewagon.github.io/purple-react/static/media/circle.953c9ca0.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  margin-top: 20px;
+  padding: 20px 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  z-index: 1;
+} 
+.card::after{
+  content: '';
+  position: absolute;
+  background-image: url(https://themewagon.github.io/purple-react/static/media/circle.953c9ca0.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  border-radius: 10px;
+  z-index: -1;
+}
+.info-card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.info-card img{
+  width: 25px;
+}
+.card.pink{
+  background: linear-gradient(90deg, #ffbf96, #fe7096);
+}
+.card.blue{
+  background: linear-gradient(90deg, #90caf9, #047edf 99%);
+}
+.card.green{
+  background: linear-gradient(90deg, #84d9d2, #07cdae);
+}
+.card h4{
+  color: #ffffff;
+  font-size: 17px;
+}
+.card h2{
+  color: #ffffff;
+}
+.card p{
+  color: #ffffff;
+  font-size: 17px;
+  margin: 20px 0 0 0;
+}
+.wrapper-images{
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrapper-images .card-image{
+  flex-basis: 50%;
+
+}
+.wrapper-images .card-image img{
+  max-width: 100%;
+  width: 320px;
+  height: 155px;
+  object-fit: cover;
+}
+.wrapper-images .card-image:first-child img{
+  border-radius: 20px 0 0 0;
+}
+.wrapper-images .card-image:nth-child(2) img{
+  border-radius: 0 20px 0 0;
+}
+.wrapper-images .card-image:nth-child(3) img{
+  border-radius: 0 0 0 20px ;
+}
+.wrapper-images .card-image:last-child img{
+  border-radius: 0 0 20px 0;
+}
+.text-images p{
+  margin-top: 20px;
+  line-height: 1.8;
+}
+.wrapper-line-chart{
+  height: 600px;
+}
+.daily-tasks{
+  padding: 20px ;
+  border-radius: 10px;
+}
+.daily-tasks h2{
+  font-size: 18px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.to-do-list {
+  background-color: #f0f0f0;
+}
+
+.pending-list {
+  background-color: #ffe0b2;
+}
+.done-list {
+  background-color: #c8e6c9;
+}
+.daily-tasks .wrapper-link {
+  display: flex;
+  justify-content: center;
+}
+.wrapper-link a{
+  text-decoration: none;
+  padding: 10px 5px;
+  margin-left: 5px;
+  border-radius: 6px;
+  color: #ffffff;
+  background-image: linear-gradient(90deg, #da8cff, #9a55ff);
+}
+.lottie-animation{
+  display: flex;
+  justify-content: center;
+}

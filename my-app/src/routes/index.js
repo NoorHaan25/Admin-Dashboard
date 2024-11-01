@@ -1,16 +1,15 @@
 import { createBrowserRouter } from "react-router-dom";
 import AdminLayout from "../layout/AdminLayout";
 import Dashboard from "../pages/Dashboard";
-import Team from "../pages/Team";
+import TaskManagement from "../pages/TaskManagement";
 import ToDoList from "../pages/ToDoList";
 import Bar from "../pages/Bar";
-import Geography from "../pages/Geography";
 import FAQ from "../pages/FAQ";
 import Calendar from "../pages/Calendar";
 import Line from "../pages/Line";
 import Pie from "../pages/Pie";
 import Form from "../pages/Form";
-import StickyNotes from "../pages/Contacts";
+import StickyNotes from "../pages/StickyNotes";
 export const routes =createBrowserRouter([
   
   {
@@ -23,8 +22,8 @@ export const routes =createBrowserRouter([
         element:<Dashboard/>,
       },
       {
-        path:'team',
-        element:<Team/>,
+        path:'TaskManagement',
+        element:<TaskManagement/>,
       },
       {
         path:'StickyNotes',
@@ -57,10 +56,6 @@ export const routes =createBrowserRouter([
       {
         path:'line',
         element:<Line/>,
-      },
-      {
-        path:'geography',
-        element:<Geography/>,
       }
     ]
   }

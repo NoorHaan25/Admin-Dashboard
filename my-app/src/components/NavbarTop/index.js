@@ -14,7 +14,6 @@ function NavbarTop({openBars , setOpenbars , openBarsSmall, setOpenbarsSmall}) {
   console.log('darkTheme', darkTheme);
   return (
     <Navbar expand="lg" className={`${styles["navbar"]} ${darkTheme ? "dark" : "light"}`}>
-
           <Row style={{ width: "100%" }} className="align-items-center">
             <Col lg={6} md={8} sm={6} xs={6}>
               <a href="#home" className={styles["brand"]}>
@@ -42,10 +41,7 @@ function NavbarTop({openBars , setOpenbars , openBarsSmall, setOpenbarsSmall}) {
                 <Link  href="#home" className={styles["nav-link"]} >
                   <Theme/>
                   </Link>
-                {/*<Link href="#link" className={styles["nav-link"]}>
-                  <img src={require(`../../image/icons/settings-${darkTheme ? 'dark' : 'light'}.png`)} alt="settings-icon" className={styles["icon"]}/>
-                </Link>*/}
-                <Link href="#link" className={styles["nav-link"]}>
+                <Link href="#link" className={`${styles["nav-link"]} ${styles["notification"]}`}>
                   <img src={require(`../../image/icons/notification-${darkTheme ? 'dark' : 'light'}.png`)} alt="bell-icon" className={styles["icon"]}/>
                 </Link>
                 <Link href="#link" className={styles["nav-link"]}>
